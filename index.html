@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+        <style>
+          body {background: #222; color: #FFFFFF;}
+        </style>
+    <title>Соціологічне опитування</title>
+</head>
+<body>
+   <center>
+       <h2>Соціологічне опитування</h2>
+    </center>
+    <center>
+       <p>Самооцінка громадян України</p>
+   </center>
+    <form>
+        <fieldset>
+            <legend>Якщо Вам не доводилося бувати в країнах ЄС, США чи Канаді, то чому?</legend>
+                <input type="radio" name="EU">Не було у цьому потреби<br>
+                <input type="radio" name="EU">Не було такого бажання<br>
+                <input type="radio" name="EU">Складнощі з отриманням візи<br>
+        </fieldset><br>
+        <fieldset>
+            <label>Оберіть якій соціальній сторінці надаєте перевагу:
+                <input list="socialnetwork" name="mysocialnetwork" /></label>
+                    <datalist id="socialnetwork">
+                        <option value="Вк">
+                        <option value="Фейсбук">
+                        <option value="Однокласники">
+                        <option value="Твітер">
+                        <option value="Інстаграм">
+                        <option value="Інші">
+                        <option value="Не маю соц. сторінки">
+                    </datalist>
+        </fieldset><br>
+        <fieldset>
+            <legend>Скільки часу в день ви витрачаєте на соціальні сторінки:</legend>
+                <input type="radio" name="time" value="1-2">1-2<br>
+                <input type="radio" name="time" value="2-3">2-3<br>
+                <input type="radio" name="time" value="3-4">3-4<br>
+                <input type="radio" name="time" value="4-5">4-5<br>
+                <input type="radio" name="time" value="over 5">більше 5<br>
+        </fieldset>
+        <fieldset>
+            <legend>Якому виду спілкуванню надаєте перевагу:</legend>
+                <input type="radio" name="komunication" value="real">Особистісне<br>
+                <input type="radio" name="komunication" value="internet">Інтернет<br>
+        </fieldset><br>
+   </form><br>
+      <form action="https://formspree.io/konooleh@gmail.com" method="POST">
+       <fieldset>
+           <legend>Надіслати ваші дані:</legend>
+           <label>Ваше ім'я:</label>
+           <br>
+           <input type="text" name="name">
+        <br>
+            <label>Адреса:</label>
+        <br>
+            <input type="e-mail" name="e-mail">
+        <br>
+        <br>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <br>
+       <a href="results.html"><font color="green"><b>Дані опитування</b></font></a>
+</body>
+</html>
