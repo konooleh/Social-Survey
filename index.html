@@ -12,50 +12,55 @@
        <h2>Соціологічне опитування</h2>
     </center>
     <center>
-       <p>Самооцінка громадян України</p>
+       <p>Куди і як часто подорожують українці</p>
    </center>
-    <form>
+      <form action="https://formspree.io/konooleh@gmail.com" method="POST">
+        <fieldset>
+            <legend>Вкажіть ваш вік</legend>
+                <input type="radio" name="age" value="18-25">18-25<br>
+                <input type="radio" name="age" value="26-45">26-45<br>
+                <input type="radio" name="age" value="46-65">46-65<br>
+        </fieldset><br>
+                <fieldset>
+            <label>Вкажіть країну, яку ви відвідали:
+                <input list="countries" name="countries" /></label>
+                    <datalist id="countries">
+                        <option value="USA">
+                        <option value="Canada">
+                        <option value="Germany">
+                        <option value="France">
+                        <option value="UK">
+                        <option value="Italy">
+                        <option value="Spain">
+                    </datalist>
+        </fieldset><br>
+        <fieldset>
+            <legend>Як часто вам доводиться подорожувати на протязі року?</legend>
+                <input type="radio" name="time" value="0-1">0-1<br>
+                <input type="radio" name="time" value="2-3">2-3<br>
+                <input type="radio" name="time" value="over 3">>3<br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Яиом видом транспорту ви зазвичай подорожуєте</legend>
+                <input type="radio" name="transport" value="car">Машиною<br>
+                <input type="radio" name="transport" value="bus">Автобусом<br>
+                <input type="radio" name="transport" value="plane">Літаком<br>
+        </fieldset><br>
         <fieldset>
             <legend>Якщо Вам не доводилося бувати в країнах ЄС, США чи Канаді, то чому?</legend>
                 <input type="radio" name="EU">Не було у цьому потреби<br>
                 <input type="radio" name="EU">Не було такого бажання<br>
                 <input type="radio" name="EU">Складнощі з отриманням візи<br>
         </fieldset><br>
-        <fieldset>
-            <label>Оберіть якій соціальній сторінці надаєте перевагу:
-                <input list="socialnetwork" name="mysocialnetwork" /></label>
-                    <datalist id="socialnetwork">
-                        <option value="Вк">
-                        <option value="Фейсбук">
-                        <option value="Однокласники">
-                        <option value="Твітер">
-                        <option value="Інстаграм">
-                        <option value="Інші">
-                        <option value="Не маю соц. сторінки">
-                    </datalist>
-        </fieldset><br>
-        <fieldset>
-            <legend>Скільки часу в день ви витрачаєте на соціальні сторінки:</legend>
-                <input type="radio" name="time" value="1-2">1-2<br>
-                <input type="radio" name="time" value="2-3">2-3<br>
-                <input type="radio" name="time" value="3-4">3-4<br>
-                <input type="radio" name="time" value="4-5">4-5<br>
-                <input type="radio" name="time" value="over 5">більше 5<br>
-        </fieldset>
-        <fieldset>
-            <legend>Якому виду спілкуванню надаєте перевагу:</legend>
-                <input type="radio" name="komunication" value="real">Особистісне<br>
-                <input type="radio" name="komunication" value="internet">Інтернет<br>
-        </fieldset><br>
-   </form><br>
-      <form action="https://formspree.io/konooleh@gmail.com" method="POST">
+    <br>
        <fieldset>
            <legend>Надіслати ваші дані:</legend>
            <label>Ваше ім'я:</label>
            <br>
            <input type="text" name="name">
         <br>
-            <label>Адреса:</label>
+            <label>e-mail:</label>
         <br>
             <input type="e-mail" name="e-mail">
         <br>
@@ -64,6 +69,8 @@
         </fieldset>
     </form>
     <br>
+    <center>
        <a href="results.html"><font color="green"><b>Дані опитування</b></font></a>
+    </center>
 </body>
 </html>
